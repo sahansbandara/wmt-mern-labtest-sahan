@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5001/api",
+  baseURL: import.meta.env.VITE_API_URL || "https://item-manager-backend-lym8.onrender.com/api",
 });
 
 export const getItems = () => API.get("/items");
